@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  forTeacher
+//
+//  Created by susu on 15/5/13.
+//  Copyright (c) 2015年 susu. All rights reserved.
+//
+
+#ifndef forTeacher_PrefixHeader_pch
+#define forTeacher_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+#ifdef __OBJC__
+
+#define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
+#define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
+#define Version [[[UIDevice currentDevice] systemVersion] doubleValue]
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "UIImageView+WebCache.h"
+MBProgressHUD *HUD;
+#import "MJRefresh.h"
+
+#import "MainViewController.h"
+#import "AudioStreamer.h"
+#import "MJPhotoBrowser.h"
+#import "MJPhoto.h"
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
+#import <CoreAudio/CoreAudioTypes.h>
+#import "publicRequest.h"
+#import "lame.h"
+
+#endif
