@@ -8,6 +8,7 @@
 
 #import "Topic_ViewController.h"
 #import "TopicDetail_ViewController.h"
+#import "Topic_classListViewController.h"
 
 @interface Topic_ViewController ()<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource,UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
 {
@@ -250,6 +251,32 @@
         [scrollView setContentOffset:CGPointMake(0, 180) animated:YES];
 }
 
+-(void)textViewDidChange:(UITextView *)textView
+{
+    if([textView.text rangeOfString:@"@"].location !=NSNotFound)
+   {
+       [self gotoClassList];
+   }
+}
+
+
+-(void)popViewBack:(NSDictionary *)dic
+{
+    NSString * name =  [dic objectForKey:@"userName"];
+    NSString * text  = contentText.text;
+    contentText.text =  [@"" stringByAppendingFormat:@"%@ %@",text, name];
+}
+
+
+-(void)gotoClassList
+{
+    Topic_classListViewController * list  = [[Topic_classListViewController alloc] init];
+    list.classId = self.classId;
+    [self.navigationController pushViewController:list animated:YES];
+    
+}
+
+
 -(void)hiden
 {
     [titleText resignFirstResponder];
@@ -417,6 +444,7 @@
     browser.photos = photos; // 设置所有的图片
     [browser show];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

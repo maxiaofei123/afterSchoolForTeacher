@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D25099C71B141951005EC52F /* 604-1136@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D25099C61B141951005EC52F /* 604-1136@2x.png */; };
+		D25476B41BF5D92000E11341 /* Topic_classListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25476B31BF5D92000E11341 /* Topic_classListViewController.m */; };
 		D288C4511B12F2C20063DD3F /* LocalAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D288C4451B12F2C20063DD3F /* LocalAlbumTableViewController.m */; };
 		D288C4521B12F2C20063DD3F /* LocalAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D288C4471B12F2C20063DD3F /* LocalAlbumCell.m */; };
 		D288C4531B12F2C20063DD3F /* LocalAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D288C4481B12F2C20063DD3F /* LocalAlbumCell.xib */; };
@@ -219,6 +220,8 @@
 
 /* Begin PBXFileReference section */
 		D25099C61B141951005EC52F /* 604-1136@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "604-1136@2x.png"; path = "../../604-1136@2x.png"; sourceTree = "<group>"; };
+		D25476B21BF5D92000E11341 /* Topic_classListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic_classListViewController.h; sourceTree = "<group>"; };
+		D25476B31BF5D92000E11341 /* Topic_classListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic_classListViewController.m; sourceTree = "<group>"; };
 		D288C4441B12F2C20063DD3F /* LocalAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalAlbumTableViewController.h; sourceTree = "<group>"; };
 		D288C4451B12F2C20063DD3F /* LocalAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalAlbumTableViewController.m; sourceTree = "<group>"; };
 		D288C4461B12F2C20063DD3F /* LocalAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalAlbumCell.h; sourceTree = "<group>"; };
@@ -554,6 +557,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D25476B11BF5D8DC00E11341 /* 留言互动 */ = {
+			isa = PBXGroup;
+			children = (
+				D2C4B7FF1B03435F00251536 /* Topic_ViewController.h */,
+				D2C4B8001B03435F00251536 /* Topic_ViewController.m */,
+				D2C4B8011B03435F00251536 /* TopicDetail_ViewController.h */,
+				D2C4B8021B03435F00251536 /* TopicDetail_ViewController.m */,
+				D25476B21BF5D92000E11341 /* Topic_classListViewController.h */,
+				D25476B31BF5D92000E11341 /* Topic_classListViewController.m */,
+			);
+			name = "留言互动";
+			sourceTree = "<group>";
+		};
 		D288C4431B12F2AE0063DD3F /* choosePhoto */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,6 +768,7 @@
 		D2C4B6F41B0342F900251536 /* 家校互动 */ = {
 			isa = PBXGroup;
 			children = (
+				D25476B11BF5D8DC00E11341 /* 留言互动 */,
 				D290484A1B254161002BD555 /* T_schollAndFamily_ViewController.h */,
 				D2C4B7FC1B03435F00251536 /* T_schollAndFamily_ViewController.m */,
 				D2C4B7FD1B03435F00251536 /* Message_ViewController.h */,
@@ -760,10 +777,6 @@
 				D29048401B25348B002BD555 /* MyMessageList_ViewController.m */,
 				D29048471B253F07002BD555 /* ChangeMessage_ViewController.h */,
 				D29048481B253F07002BD555 /* ChangeMessage_ViewController.m */,
-				D2C4B7FF1B03435F00251536 /* Topic_ViewController.h */,
-				D2C4B8001B03435F00251536 /* Topic_ViewController.m */,
-				D2C4B8011B03435F00251536 /* TopicDetail_ViewController.h */,
-				D2C4B8021B03435F00251536 /* TopicDetail_ViewController.m */,
 				D2C4B8031B03435F00251536 /* classMenagement_ViewController.h */,
 				D2C4B8041B03435F00251536 /* classMenagement_ViewController.m */,
 				D2C4B8051B03435F00251536 /* addStudentInfo_ViewController.h */,
@@ -1337,6 +1350,7 @@
 				D2C4B7BB1B03431400251536 /* MJPhotoBrowser.m in Sources */,
 				D2C4B8461B03439200251536 /* T_homeWork_ViewController.m in Sources */,
 				D2C4B7C41B03431400251536 /* MJRefreshHeaderView.m in Sources */,
+				D25476B41BF5D92000E11341 /* Topic_classListViewController.m in Sources */,
 				D2F7FE1E1B37FC77006B443B /* VoteDetail_ViewController.m in Sources */,
 				D2C4B7DC1B03431500251536 /* UIImage+GIF.m in Sources */,
 				D288C4581B12F2C20063DD3F /* AssetHelper.m in Sources */,

@@ -9,6 +9,7 @@
 #import "TopicDetail_ViewController.h"
 #import "cyCleScroll.h"
 
+
 @interface TopicDetail_ViewController ()<UITableViewDataSource,UITableViewDelegate,UITextViewDelegate>
 {
     UIScrollView * scrollView;
@@ -245,6 +246,8 @@
     if (textView == contentText)
         [scrollView setContentOffset:CGPointMake(0, 190) animated:YES];
 }
+
+
 
 -(void)hiden
 {

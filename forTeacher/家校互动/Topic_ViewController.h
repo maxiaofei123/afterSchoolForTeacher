@@ -12,4 +12,5 @@
 
 
 @property(nonatomic,strong)NSString * classId;
+-(void)popViewBack:(NSDictionary *)dic;
 @end
